@@ -1,0 +1,47 @@
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "What?"
+cleartext !
+text "O"
+cleartext !
+sound fx_menu.aac
+choice (What is he trying to tell you?)
+text "He's trying to scare me. But how does he know that I'm terrified by the letter 'O'?"
+cleartext !
+sound fx_menu.aac
+choice (What's so scary about it?)
+text "I have a frightening image when I picture it in my head..."
+cleartext !
+text "I can show. Explaining won't be enough, but keep in mind that it'll cost me a dozen of nerve cells..."
+cleartext !
+music ~
+bgload scaryo.png 0
+music scaryo.mp3
+delay 480
+music ~
+music o.mp3
+bgload bg2.png 0
+setimg oguy.png 85 0
+text Something like that.
+cleartext !
+text "So I'll just continue to ignore his question."
+cleartext !
+jump ch6.scr

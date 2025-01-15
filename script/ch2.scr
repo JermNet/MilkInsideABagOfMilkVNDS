@@ -1,0 +1,29 @@
+text I take a deep breath of air.
+cleartext !
+text "Hello, can I?.."
+cleartext !
+text ...
+cleartext !
+text ...
+cleartext !
+text ...
+cleartext !
+text Crap, I forgot.
+cleartext !
+text Nineteenth attempt - and I'm failing again. I bite my lip in frustration.
+cleartext !
+text "So, once again..."
+cleartext !
+text "Hello, can I get?.."
+cleartext !
+sound fx_menu.aac
+choice (Wow, that's a whole word more!)
+text "Thank you, I'm trying my best..."
+cleartext !
+sound fx_menu.aac
+choice (I think this time the 'l' sound was longer than usual...)
+text "Do you think that's it?"
+cleartext !
+sound fx_menu.aac
+choice (Who knows...)
+jump ch3.scr

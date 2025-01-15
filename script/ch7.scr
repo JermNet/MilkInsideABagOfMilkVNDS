@@ -1,0 +1,129 @@
+label die
+sound fx_menu.aac
+choice (They hate you.)|(You are pathetic.)|(Pay for the milk.)
+
+if selected == 1
+    text "W-why?"
+    cleartext !
+    sound fx_menu.aac
+    choice (You are stupid and worthless. You're not even capable of going to the store to get milk. I hope Mom throws you out the window, though, even in flight you'll think it's just a fun ride.)|(What are you talking about?)
+    
+    if selected == 1
+        setvar badendpoints + 1
+        
+        if badendpoints > 2
+            music ~
+            bgload black.png
+            jump end.scr
+        fi
+
+        text "I... will pretend that I didn't hear that."
+        cleartext !
+        jump die
+
+    fi
+    if selected == 2
+        text "Nothing..."
+        cleartext !
+        jump die
+    fi
+
+fi
+if selected == 2
+    text "W-why are you telling me this?"
+    cleartext !
+    sound fx_menu.aac
+    choice (I want you to die. Even more than Mom, though she doesn't even see you as a living creature - to her, you're just a mote of dust that flies around the room aimlessly.)|(What are you talking about?)
+
+    if selected == 1
+        setvar badendpoints + 1
+        
+        if badendpoints > 2
+            music ~
+            bgload black.png
+            jump end.scr
+        fi
+
+        text "I... will pretend that I didn't hear that."
+        cleartext !
+        jump die
+
+    fi
+    if selected == 2
+        text "Nothing..."
+        cleartext !
+        jump die
+    fi
+
+fi
+if selected == 3
+    text "Haha, really... What would I do without you!"
+    cleartext !
+fi
+
+text I take a crumpled bill out of my pocket and hand it to the cashier.
+cleartext !
+text He starts to carefully examine it.
+cleartext !
+text ...
+cleartext !
+text It took about two days before he nodded contentedly and put it in the cash register.
+cleartext !
+bgload bg4.png
+text "Thank you, goodbye!"
+cleartext !
+bgload black.png
+music ~
+delay 60
+bgload bg5.png
+music music_4.mp3
+text I walk down a familiar street past a gas station.
+cleartext !
+text A bag of milk unpleasantly tugs at my hand, reminding me of the days when I was in physical therapy.
+cleartext !
+text By the way, they gave me a bag at the checkout, so now I'm carrying a bag of milk in another bag.
+cleartext !
+text Don't think anything of it, I just love the pyramidal structure of verbal constructions.
+cleartext !
+text The gas station is getting closer.
+cleartext !
+sound fx_menu.aac
+choice (How are you feeling?)
+text "Thank you for your interest. I feel like a mile long bar of ice cream."
+cleartext !
+sound fx_menu.aac
+choice (What is that supposed to mean?)
+text "As if I'd tell you!"
+cleartext !
+sound fx_menu.aac
+choice (But I'm really interested!)|(You're just a weirdo.)
+
+if selected == 1
+    text "Well, look. The ratio of water to milk in the volume of air occupied by me is about thirty to one."
+    cleartext !
+    text "And yeah, ice cream is not the best. Unless you want to drink more than eat..."
+    cleartext !
+    text "Anyway, the road from the store to the gas station is a stick, and the road from the gas station to home is ice cream."
+    cleartext !
+    text "During today's walk, my body has been to every part of this path."
+    cleartext !
+    text "Simple math."
+    cleartext !
+    sound fx_menu.aac
+    choice (I see...)
+    
+fi
+if selected == 2
+    setvar badendpoints + 1
+        
+    if badendpoints > 2
+        music ~
+        bgload black.png
+        jump end.scr
+    fi
+    
+    text "I'm sharing with you, and you!"
+    cleartext !
+fi
+
+jump ch8.scr

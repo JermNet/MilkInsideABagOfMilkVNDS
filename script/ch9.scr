@@ -1,0 +1,17 @@
+text "You know what?"
+cleartext !
+sound fx_menu.aac
+choice (What?)
+text "Since I'm a character in a visual novel... I want to talk to whoever is reading this right now."
+cleartext !
+sound fx_menu.aac
+choice (If you say so.)|(It could hurt your recovery.)
+
+if selected == 1
+    jump ch10.scr
+fi
+if selected == 2
+    text "I don't care! Do you hear me!?"
+    cleartext !
+    jump ch10.scr
+fi

@@ -1,0 +1,171 @@
+text What do you see?
+cleartext !
+choice Body|Corpse|Something else
+
+if selected == 1
+    text Right.
+    cleartext !
+fi
+if selected == 2
+    text Right.
+    cleartext !
+fi
+if selected == 3
+    text !
+    cleartext !
+    text ...
+    cleartext !
+    text Anyway...
+    cleartext !
+fi
+
+text This is my dad.
+cleartext !
+text Some of his parts, at least.
+cleartext !
+text ...
+cleartext !
+text We do have a very difficult family...
+cleartext !
+text But despite all the problems... I n-never would have thought...!
+cleartext !
+text ...
+cleartext !
+text Sorry, I shouldn't have raised my voice.
+cleartext !
+text Anyway... he jumped out the window and died.
+cleartext !
+text This is my last memory. Then - a long gap.
+cleartext !
+bgload black.png
+delay 60
+bgload bg7.png
+delay 60
+text ...
+cleartext !
+text Strange, very strange...
+cleartext !
+text Today is the first time I've been able to buy something in a store without a major incident.
+cleartext !
+text Of course, the medicine helped me, however...
+cleartext !
+text I think it's more your merit.
+cleartext !
+text I kept thinking, 'we mustn't screw up in front of the reader!' or 'oh my God, what will he think?' Haha!
+cleartext !
+text I don't know why I decided to become a visual novel character for the sake of going to the store today... but it clearly paid off!
+cleartext !
+text Thank you!
+cleartext !
+text ...
+cleartext !
+text By the way...
+cleartext !
+text It seems to me that there are some boundaries in our communication...
+cleartext !
+bgload black.png
+delay 60
+bgload bg7.png
+text That's how I like it! Haha!..
+cleartext !
+text ...
+cleartext !
+text And yet, I've been so sad lately...
+cleartext !
+text I've been thinking more and more about what my life has become. Ever since my dad...
+cleartext !
+text ... well, you know.
+cleartext !
+text Day after day, it's the same thing.
+cleartext !
+text I've tried so many medications that I hardly feel any difference between them anymore.
+cleartext !
+text As long as they help keep me on my feet, I'm happy, haha...
+cleartext !
+text ...
+cleartext !
+text But you know what?
+cleartext !
+text Today is a special day, because I have you!
+cleartext !
+text @I want to tell you so much, you can't even ima-
+cleartext !
+music ~
+sound fx_menu.aac
+choice (That was very rude of you...)
+text Oh no...
+cleartext !
+sound fx_menu.aac
+choice (I'm not going to pressure you. I'm just advising you to go home.)
+text ...
+cleartext !
+text "I understand."
+cleartext !
+text Well, dear reader, shall we go?
+cleartext !
+bgload black.png
+delay 60
+bgload bg1.png
+delay 60
+bgload black.png
+delay 60
+bgload bg9.png
+delay 60
+bgload black.png
+delay 60
+bgload bg10.png
+delay 60
+music music_6.mp3
+text When I get to my floor, I hang over the railing.
+cleartext !
+text Repeating this action every day, like a ritual, I stopped being afraid of heights altogether.
+cleartext !
+text A few minutes ago, the effects of the medicine finally wore off, so I just enjoy the blissful silence.
+cleartext !
+text When I am under the influence of drugs, terrible and unpleasant melodies sound in my head. Mixing with the sounds of the world around me, they create a terrible dissonance in my head.
+cleartext !
+text ...
+cleartext !
+text I turn around and go to my apartment.
+cleartext !
+music ~
+bgload black.png
+delay 60
+bgload bg11.png
+music music_6.mp3
+delay 300
+bgload mom.png 0
+delay 240
+text "Did you bring the milk?"
+cleartext !
+bgload her.png 0
+delay 120
+text "Hi, Mom."
+cleartext !
+bgload mom.png 0
+delay 120
+text "Did you bring the milk?"
+cleartext !
+bgload her.png 0
+delay 120
+text "Yes, Mom."
+cleartext !
+bgload mom.png 0
+delay 120
+text "Did your new medicine help?"
+cleartext !
+bgload her.png
+delay 120
+text "Yes, Mom."
+cleartext !
+bgload mom.png 0
+delay 120
+text "Go to bed."
+cleartext !
+bgload her.png 0
+delay 120
+text "Yes, Mom."
+cleartext !
+bgload mom.png 0
+music fx_1.mp3
+delay 390

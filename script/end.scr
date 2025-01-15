@@ -1,0 +1,8 @@
+bgload her.png 0
+music badend.mp3
+delay 300
+text Looks like 'player' doesn't help me at all...
+cleartext !
+text I guess I'll try something else next time.
+cleartext !
+music ~

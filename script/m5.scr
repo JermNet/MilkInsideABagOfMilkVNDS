@@ -1,0 +1,11 @@
+sound fx_menu.aac
+choice (You have to accept the truth.)|(...)
+
+if selected == 1
+    text "No!"
+    cleartext !
+    jump m6.scr
+fi
+if selected == 2
+    jump ch9.scr
+fi

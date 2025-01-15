@@ -1,0 +1,72 @@
+text I feel movement under my feet. Asphalt grains, petrol stains...
+cleartext !
+text I'm trying to keep my balance. And how do people move over something as uneven as the city plane?
+cleartext !
+text Gently, heel, toe... I count in my mind every meter of the path I walk - I even close my eyes for more concentration.
+cleartext !
+sound fx_menu.aac
+choice (Hey, watch out!)
+text "Ah?.."
+cleartext !
+text I unconsciously take a sharp step to the side. At the same moment, a huge bear rushes past me with a wild screech.
+cleartext !
+text "Hey, I'm walking here!"
+cleartext !
+text I cast a reproachful glance at the swiftly departing giant.
+cleartext !
+text Its red eyes, in turn, look at me with mockery.
+cleartext !
+text "Did you see that? How brazen!"
+cleartext !
+sound fx_menu.aac
+choice (It was a truck.)
+text "Oh really?"
+cleartext !
+text Although, if you think about it, are there bears with eyes on the back of their heads?
+cleartext !
+sound fx_menu.aac
+choice (You could have died.)
+text "Come on. Are you saying someone would seriously want to kill an innocent girl carrying a bag of milk?"
+cleartext !
+sound fx_menu.aac
+choice (You're sick.)|(The world is a cruel and dangerous place.)
+
+if selected == 1
+    setvar badendpoints + 1
+        
+    if badendpoints > 2
+        music ~
+        bgload black.png
+        jump end.scr
+    fi
+
+    text "Ha-ha..."
+    cleartext !
+    text "You just had to say it, didn't you?"
+    cleartext !
+fi
+if selected == 2
+    text "I'm not in the world you're talking about."
+    cleartext !
+fi
+
+bgload black.png
+stop music ~
+delay 60
+bgload bg6.png
+music music_1.mp3
+text My journey continues.
+cleartext !
+text If you think about it, the road from the store has one interesting propery - it adjusts to me in the most bizarre ways.
+cleartext !
+text When I am in a hurry, all the traffic lights turn off helpfully. When I feel like crying, a cloud appears over me and pours rain streams that hide my tears.
+cleartext !
+text Right now I can feel a cloud slowly gathering over the top of my head.
+cleartext !
+text I'm sad.
+cleartext !
+sound fx_menu.aac
+choice (Are you sure this is really happening?)
+text "What else could it be?"
+cleartext !
+jump m1.scr

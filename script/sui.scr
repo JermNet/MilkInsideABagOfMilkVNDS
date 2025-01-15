@@ -1,0 +1,15 @@
+text ...
+cleartext !
+text Of course, you couldn't help but ask...
+cleartext !
+text In the end, I'm just talking to myself. Sooner or later I would have brought it up.
+cleartext !
+text So you're really that interested in what happened to me?
+cleartext !
+bgload black.png
+delay 60
+bgload bg8.png
+delay 60
+text I won't waste time.
+cleartext !
+jump body.scr

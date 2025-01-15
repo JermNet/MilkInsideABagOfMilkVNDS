@@ -1,0 +1,13 @@
+sound fx_menu.aac
+choice (Has it ever occurred to you that it's all just in your head?)|(...)
+
+if selected == 1
+    text "That's not what the manual said at all..."
+    cleartext !
+    text "Apparently, these pills don't work for me either."
+    cleartext !
+    jump m2.scr
+fi
+if selected == 2
+    jump ch9.scr
+fi

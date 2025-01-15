@@ -1,0 +1,55 @@
+label d1
+text Do you know what I'm talking about?
+cleartext !
+choice Yes|yes|YES|No|no|NO
+
+if selected == 1
+    text Really?..
+    cleartext !
+fi
+if selected == 2
+    text Please capitalize it - you're ruining the narrative!
+    cleartext !
+    jump d1
+fi
+if selected == 3
+    text There's no need to scream...
+    cleartext !
+    jump d1
+fi
+if selected == 4
+    text Well, I'm not really surprised.
+    cleartext !
+fi
+if selected == 5
+    text Please capitalize it - you're ruining the narrative!
+    cleartext !
+    jump d1
+fi
+if selected == 6
+    text There's no need to scream...
+    cleartext !
+    jump d1
+fi
+
+text I must be nothing like the model protagonist at all, huh?
+cleartext !
+text ...
+cleartext !
+text To be honest, I haven't read many visual novels.
+cleartext !
+text Sometimes I regret it, because now it costs me a lot of effort just to distinguish between letters and words.
+cleartext !
+text ...
+cleartext !
+text By the way...
+cleartext !
+text If you don't mind, I'd rather not name my diagnoses.
+cleartext !
+text Let at least you be the one who sees me for who I am.
+cleartext !
+text Even though I made you up... don't take that away from me, okay?
+cleartext !
+text Don't ask me for too much.
+cleartext !
+jump ch12.scr

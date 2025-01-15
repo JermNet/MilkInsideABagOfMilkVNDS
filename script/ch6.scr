@@ -1,0 +1,153 @@
+text "What?"
+cleartext !
+text "O"
+cleartext !
+text "What?"
+cleartext !
+text "O"
+cleartext !
+text "What?"
+cleartext !
+text "O"
+cleartext !
+text "W h a t?"
+cleartext !
+text "O"
+cleartext !
+text "I gather all my will into a fist..."
+cleartext !
+text "O?"
+cleartext !
+delay 120
+text "O!"
+cleartext !
+bgload bg2.png
+text My interlocutor shook and crawled away.
+cleartext !
+sound fx_menu.aac
+choice (You just repeated after him...)
+sound fx_menu.aac
+choice (And it worked! Do it more often.)
+text "Wait! I said he crawled away. Did he... really crawl away? I mean, I didn't even look in his direction."
+cleartext !
+sound fx_menu.aac
+choice (When exactly did you say that?)
+text "Just now!"
+cleartext !
+sound fx_menu.aac
+choice (Personally I didn't hear it.)
+text "You're just trying to distract me."
+cleartext !
+text "But I know that my words were shown on the screen..."
+cleartext !
+music ~
+bgload black.png
+delay 60
+bgload bg3.png
+music music_2.mp3
+text I'm standing by the shelves. On the rack there are bags of milk.
+cleartext !
+text We both stand. And the milk... lies? Or maybe...
+cleartext !
+sound fx_menu.aac
+choice (Hey, hey, slow down. Do you even remember why you're here?)
+text "To buy milk."
+cleartext !
+sound fx_menu.aac
+choice (So buy it.)
+text "Right here?"
+cleartext !
+sound fx_menu.aac
+choice (What do you expect me to say?)
+text "Um... I guess something like 'not here'.."
+cleartext !
+sound fx_menu.aac
+choice (Not here. Take the bag and go to the cash register.)|(You're getting on my nerves.)
+
+if selected == 1
+    text "I guessed the first sentence!"
+    cleartext !
+    text "And you, as if out of spite... didn't pause before the second one! You want to rob me of my little victories?"
+    cleartext !
+fi
+if selected == 2
+    setvar badendpoints + 1
+    
+    if badendpoints > 2
+        music ~
+        bgload black.png
+        jump end.scr
+    fi
+    
+    text "You don't want to help me at all, do you?.."
+    cleartext !
+fi
+
+text I sigh and reach out to take the milk. Or rather, the bag with the milk inside.
+cleartext !
+text Or rather, a bag of milk inside a bag.
+cleartext !
+text Or rather, a bag of milk inside a bag of milk.
+cleartext !
+text Or rather, a bag of milk inside a bag of milk inside a bag.
+cleartext !
+text Or rather, a bag of milk inside a bag of milk inside...
+cleartext !
+sound fx_menu.aac
+choice (Come on, come on!)
+sound fx_menu.aac
+choice (15 minutes before the store closes, hurry up!)
+text "I remembered what these games are called! Visual novels!"
+cleartext !
+text "And by the way, the numbers are written there in full, with letters. Are visual novels worse than books? But there the authors are not lazy, so don't get lazy, either!"
+cleartext !
+sound fx_menu.aac
+choice (Wait, I thought only your thoughts were visible on the screen...)
+text "Not anymore, so watch your mouth! Hehe!"
+cleartext !
+sound fx_menu.aac
+choice (Ahem.)
+sound fx_menu.aac
+choice (Anyway, you heard me. Hurry up, or you'll get it at home again.)
+text "I'm on my way!"
+cleartext !
+music ~
+bgload black.png
+delay 60
+bgload bg4.png
+music music_3.mp3
+text "Hello, c-can I g-get some... milk, please?"
+cleartext !
+setimg shop.png 40 45
+delay 240
+text "YOU HAVE IT."
+cleartext !
+text "Ah."
+cleartext !
+text "GIVE."
+cleartext !
+text I put a weighty bag on the register. Of course, not just the bag, but the milk, too.
+cleartext !
+text "Hi, can I... can I have it, please?"
+cleartext !
+text "NO."
+cleartext !
+text "Please!.."
+cleartext !
+text "NOO."
+cleartext !
+text "But please!.. Mom will throw me out of the window if I get back without milk!"
+cleartext !
+text "NOOo."
+cleartext !
+text "But, why not?.."
+cleartext !
+text "GIVE MORE."
+cleartext !
+text "But I don't have anything else..."
+cleartext !
+sound fx_menu.aac
+choice (Hey.)
+text "What?"
+cleartext !
+jump ch7.scr

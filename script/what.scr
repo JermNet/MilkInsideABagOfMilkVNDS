@@ -1,0 +1,18 @@
+label what
+text Promise?
+cleartext !
+choice Yes|No|What happened?
+
+if selected == 1
+    text Really?
+    cleartext !
+    jump what
+fi
+if selected == 2
+    text Promise me!
+    cleartext !
+    jump what
+fi
+if selected == 3
+    jump sui.scr
+fi

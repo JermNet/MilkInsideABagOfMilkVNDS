@@ -1,0 +1,17 @@
+sound fx_menu.aac
+choice (What game?)|...
+
+if selected == 1
+    text "Well, you know..."
+    cleartext !
+    text "There are games where you can see the character's thoughts. Right on the screen, you know?"
+    cleartext !
+    text "So I thought, if someone is reading my mind, I need to be very focused so I don't blurt out too much! Haha!"
+    cleartext !
+    jump ch2.scr
+fi
+if selected == 2
+    text "Are we going to play the silent game? Okay..."
+    cleartext !
+    jump ch2.scr
+fi

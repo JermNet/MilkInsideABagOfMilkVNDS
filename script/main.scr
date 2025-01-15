@@ -1,0 +1,39 @@
+label start
+setvar badendpoints = 0
+music ~
+bgload publishing_logo.png
+delay 220
+bgload black.png
+delay 60
+sound fx_intro.aac
+bgload made_by.png
+delay 60
+sound ~
+bgload title.png
+text HELP ME BUY MILK.
+choice OKAY
+
+delay 60
+cleartext !
+bgload bg1.png
+music music_1.mp3
+text I walk down the road to the store and rehearse my speech.
+cleartext !
+text It's been so long since I've been out of the house that I completely forgot what words to say when entering a store.
+cleartext !
+text "I'm going to the store!"
+cleartext !
+sound fx_menu.aac
+choice (Who are you talking to?)|(Shut up and go already.)
+
+if selected == 1
+	text "I'm imagining as if I were a character in a game - what if it helps me gather my thoughts?"
+	cleartext !
+	jump ch1.scr
+fi
+if selected == 2
+	setvar badendpoints + 1
+	text "H-hey... aren't you supposed to help me?"
+	cleartext !
+	jump ch2.scr
+fi

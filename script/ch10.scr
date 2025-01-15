@@ -1,0 +1,26 @@
+text I forcefully squeeze my head with my hands and place a thought block.
+cleartext !
+text ...
+cleartext !
+text Out of the corner of my eye I notice a small bench, the perfect place for cliched visual novel monologues.
+cleartext !
+text I move closer, place a noticeably weighted bag of milk next to it, and raise my head to the sky.
+cleartext !
+bgload black.png
+music ~
+delay 60
+bgload bg7.png
+music music_5.mp3
+text ...
+cleartext !
+text Listen...
+cleartext !
+text I'm a litle embarrassed, haha...
+cleartext !
+text I realize that I'm going crazy. The medications are becoming less and less effective, so...
+cleartext !
+text ...
+cleartext !
+text Ultimately, things will happen painlessly, I hope.
+cleartext !
+jump ch11.scr

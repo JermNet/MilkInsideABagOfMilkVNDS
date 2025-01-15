@@ -1,0 +1,18 @@
+text "Helllo, can I..."
+cleartext !
+text "Ugh, I wish I hadn't said anything!"
+cleartext !
+sound fx_menu.aac
+choice (Hahaha, loser!)|(Don't worry!)
+
+if selected == 1
+    setvar badendpoints + 1
+    text "Don't insult me, please...
+    cleartext !
+fi
+if selected == 2
+    text "Okay..."
+    cleartext !
+fi
+
+jump ch4.scr

@@ -1,0 +1,13 @@
+sound fx_menu.aac
+choice (The pills have nothing to do with it.)|(...)
+
+if selected == 1
+    text "Please... I just want to get home and go to bed."
+    cleartext !
+    text "I really, really am very grateful to you... But, please... no more."
+    cleartext !
+    jump m3.scr
+fi
+if selected == 2
+    jump ch9.scr
+fi

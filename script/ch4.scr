@@ -1,0 +1,113 @@
+sound fx_menu.aac
+choice (By the way, you've been walking with your left foot on the pavement and your right foot on the grass for a full minute now...)
+text "W-WHAT?!"
+cleartext !
+text My right foot is frozen in the air.
+cleartext !
+text "H-how much?"
+cleartext !
+sound fx_menu.aac
+choice (Fifty steps on the pavement and fifty-one in the grass.)
+sound fx_menu.aac
+choice (You have to undo the previous step.)
+sound fx_menu.aac
+choice (He-he-he...)
+text "H-How do you imagine that?"
+cleartext !
+sound fx_menu.aac
+choice (It's not the first time this has happened.)
+sound fx_menu.aac
+choice (You've been taught the right way, haven't you? Come on...)|(You're so stupid.)
+
+if selected == 1
+    text "I... I don't remember..."
+    cleartext !
+    text I'm ready to burst into tears.
+    cleartext !
+fi
+if selected == 2
+    setvar badendpoints + 1
+    
+    if badendpoints > 2
+        music ~
+        bgload black.png
+        jump end.scr
+    fi
+    
+    text "Stop insulting me!"
+    cleartext !
+
+fi
+
+sound fx_menu.aac
+choice (Ugh, here we go again.)
+sound fx_menu.aac
+choice (So.)
+sound fx_menu.aac
+choice (Step one - take a step back to get your foot exactly in your own footprint...)
+text "Wait a minute! What do you mean 'step one'?"
+cleartext !
+sound fx_menu.aac
+choice (What then?)
+text "But- it's already the fifty-second! Or wait, I'm going backwards- so then it's the fiftieth...!? It doesn't add up!"
+cleartext !
+sound fx_menu.aac
+choice (Okay, okay... Step fifty - take a step back to get your foot exactly in your own footprint.)
+text "Could you rephrase it just a little bit?"
+cleartext !
+text "You can't just repeat a phrase without changing at least one word. People don't talk like that!"
+cleartext !
+sound fx_menu.aac
+choice (You're hopeless...)
+text "You make it sound like it's my fault..."
+cleartext !
+sound fx_menu.aac
+choice (The store closes in an hour, so...)
+sound fx_menu.aac
+choice (You will be very, very guilty if you don't buy milk.)
+text "Damn, really!.."
+cleartext !
+sound fx_menu.aac
+choice (Well? Are you ready?)
+text "Hell yes!"
+cleartext !
+text I carefully move my foot backward, looking carefully into the dense grass...
+cleartext !
+music ~
+bgload black.png
+delay 60
+bgload bg2.png
+text As I enter the store, I turn to the first person I see.
+cleartext !
+text "Hello, can I...?"
+cleartext !
+music o.mp3
+setimg oguy.png 85 0
+delay 240
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+text "Excuse me, what?"
+cleartext !
+text "O"
+cleartext !
+sound fx_menu.aac
+choice (You shouldn't have done that...)
+sound fx_menu.aac
+choice (He's obviously not going to change his lines. You run the risk of ending up in an endless loop...)
+jump ch5.scr
